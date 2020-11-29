@@ -74,7 +74,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({
   params: { slug },
 }: any) => {
-  const [pizza]: Tpizza[] = await client.fetch(pizzaSingleQuery, { slug })
+  const [pizza]: Ipizza[] = await client.fetch(pizzaSingleQuery, { slug })
   return {
     props: { ...pizza },
   }
