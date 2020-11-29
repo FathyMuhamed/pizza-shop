@@ -5,7 +5,6 @@ import { Click, MenuHeader, MenuLists } from "styles/menuStyle"
 import Add from "./icons/add"
 
 export default function Pizzas({ pizzas, show }: any) {
-  console.log(pizzas)
   return (
     <>
       <MenuHeader>

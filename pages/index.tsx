@@ -32,7 +32,13 @@ export default function home() {
             <button tabIndex={0}>Order Now →</button>
           </Link>
         </div>
-        <img role="img" src="/pizza.gif" alt="home image" />
+        <img
+          role="img"
+          loading="lazy"
+          width={200}
+          src="/pizza.gif"
+          alt="home image"
+        />
       </Home>
     </Layout>
   )

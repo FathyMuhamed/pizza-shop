@@ -2,17 +2,11 @@
   font-family: Marmo-Regular;
   src: url("assets/fonts/Marmo-Regular.otf");
 }
-@font-face {
-  font-family: kavoon;
-  src: url("assets/fonts/Kavoon-Regular.ttf");
-}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif; */
   font-family: Marmo-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
@@ -23,13 +17,10 @@ body {
 }
 
 :root {
-  --primary: #f7b248;
   --primary: #8f672a;
   --primary-2: #f1f3f5;
   --secondary: #f96d70;
   --secondary-2: #111;
-  --background: #f8f8f8;
-  --background: #ffffff;
   --background: #f4f2f0;
   --background-2: #ffe192;
   --text-primary: #000;
@@ -64,7 +55,6 @@ h6 {
 }
 
 p {
-  /* color: var(--text-secondary); */
   letter-spacing: 0.5px;
 }
 

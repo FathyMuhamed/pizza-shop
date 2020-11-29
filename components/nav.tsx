@@ -25,9 +25,11 @@ const Links = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1em;
-
-  a:last-of-type {
-    margin-right: 1.3em;
+  a {
+    margin-left: 0.5em;
+    a:last-of-type {
+      margin-right: 1.3em;
+    }
   }
 `
 export default function Nav() {
