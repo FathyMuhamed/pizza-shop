@@ -31,8 +31,8 @@ export default function Pizzas({ pizzas, show }: any) {
           <Link key={_id} href="/menu/pizza/[slug]" as={`/menu/pizza/${slug}`}>
             <li>
               <LazyImage {...url} />
-              <Click tabIndex={0} title="Click here to add " >
-                <Add  />
+              <Click tabIndex={0} title="Click here to add ">
+                <Add />
               </Click>
               <p>$ {price}</p>
               <h3>{name}</h3>

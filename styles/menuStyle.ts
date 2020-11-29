@@ -9,7 +9,6 @@ export const MenuLists = styled.ul`
   cursor: pointer;
   margin:1.5em auto;
   padding:1em ;
-  /* border-bottom:1px solid var(--primary); */
   li {
     text-align: center;
     position:relative;

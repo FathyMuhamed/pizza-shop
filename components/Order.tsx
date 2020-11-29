@@ -14,7 +14,11 @@ export default function OrderAll({
 }: any) {
   const data = [...pizzas, ...sweets]
   return (
-    <MenuLists>
+    <MenuLists
+      style={{
+        gridTemplateColumns: "repeat(auto-fill, minmax(225px, 1fr))",
+      }}
+    >
       {order.map((singleOrder: IsingleOrder, index: number) => {
         const orderData = data.find(({ _id }) => _id === singleOrder.id)
         const { name, url } = orderData
