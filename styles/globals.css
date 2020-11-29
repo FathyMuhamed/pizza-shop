@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Marmo-Regular;
+  src: url("assets/fonts/Marmo-Regular.otf");
+}
+@font-face {
+  font-family: kavoon;
+  src: url("assets/fonts/Kavoon-Regular.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif; */
+  font-family: Marmo-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: var(--background);
+  color: var(--color);
+  scrollbar-color: var(--background-2) var(--background);
+}
+
+:root {
+  --primary: #f7b248;
+  --primary-2: #f1f3f5;
+  --secondary: #f96d70;
+  --secondary-2: #111;
+  --background: #f8f8f8;
+  --background: #ffffff;
+  --background: #f4f2f0;
+  --background-2: #ffe192;
+  --text-primary: #000;
+  --text-secondary: #474646;
+  --hover: rgba(0, 0, 0, 0.075);
+  --hover-1: rgba(0, 0, 0, 0.15);
+  --hover-2: rgba(0, 0, 0, 0.25);
+  --dropdown-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
+  --shadow-smallest: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+  --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  /* color: var(--text-secondary); */
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.tilt {
+  transform: rotate(-2deg);
+}
+button {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+.buttonOrder {
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 0.4em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+}
+.buttonOrder div {
+  padding-right: 1em;
+}
+.addOrder {
+  margin-top: 1.5em;
+  background-color: var(--secondary);
+  box-shadow: 0 0 0 rgba(88, 120, 243, 0.4);
+  animation: pulseAnim 2s infinite;
+}
+.addOrder:hover {
+  background-color: green;
+}
+.removeOrder {
+  background-color: red;
+}
+.highlight {
+  background-color: var(--background-2);
+  padding: 0.2em 0.3em;
+  border-radius: 6px;
+  box-shadow: var(--shadow-small);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes pulseAnim {
+  0% {
+    box-shadow: 0 0 0 rgba(249, 109, 112, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(249, 109, 112, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 109, 112, 0.2);
+  }
+}
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-48px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 0.2;
+  }
+  40% {
+    transform: translateX(-26px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateX(-13px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateX(-6.5px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateX(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
