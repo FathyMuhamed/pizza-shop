@@ -46,9 +46,10 @@ export const Pizza = styled.div`
         border-radius: 5px;
         font-size: 0.8em;
         transition: all 0.3s ease-in;
+        margin: 0.4em;
         &:hover,
         &:focus {
-          background-color: var(--primary);
+          background-color: var(--background-2);
         }
         span {
           color: var(--text-secondary);

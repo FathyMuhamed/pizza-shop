@@ -4,11 +4,8 @@ import { Click, MenuHeader, MenuLists } from "styles/menuStyle"
 import Link from "next/link"
 import Add from "./icons/add"
 import useOrder from "utils/useOrder"
-interface Isweets {
-  sweets: Sweet[]
-  show: Boolean
-}
-export default function Sweets({ sweets, show }: Isweets) {
+
+export default function Sweets({ sweets, show }: any) {
   const { addToOrder } = useOrder()
   return (
     <>
@@ -17,12 +14,16 @@ export default function Sweets({ sweets, show }: Isweets) {
           <>
             <h2>Sweets</h2>
             <Link href="/menu/sweet">
-              <p className="highlight">SeeAll →</p>
+              <button tabIndex={0} className="highlight">
+                SeeAll →
+              </button>
             </Link>
           </>
         ) : (
           <Link href="/menu">
-            <p className="highlight">← Back to menu</p>
+            <button tabIndex={0} className="highlight">
+              ← Back to menu
+            </button>
           </Link>
         )}
       </MenuHeader>
@@ -31,6 +32,8 @@ export default function Sweets({ sweets, show }: Isweets) {
           <li key={_id}>
             <LazyImage {...url} />
             <Click
+              tabIndex={0}
+              title="Click here to add "
               style={{ bottom: "4.5em" }}
               onClick={() => addToOrder({ id: _id, priceSize: price })}
             >

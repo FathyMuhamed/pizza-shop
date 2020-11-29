@@ -3,11 +3,8 @@ import Link from "next/link"
 import LazyImage from "utils/lazyImage"
 import { Click, MenuHeader, MenuLists } from "styles/menuStyle"
 import Add from "./icons/add"
-interface IPizzas {
-  pizzas: Pizza[]
-  show: Boolean
-}
-export default function Pizzas({ pizzas, show }: IPizzas) {
+
+export default function Pizzas({ pizzas, show }: any) {
   console.log(pizzas)
   return (
     <>
@@ -16,12 +13,16 @@ export default function Pizzas({ pizzas, show }: IPizzas) {
           <>
             <h2>Pizzas</h2>
             <Link href="/menu/pizza">
-              <p className="highlight">SeeAll →</p>
+              <button tabIndex={0} className="highlight">
+                SeeAll →
+              </button>
             </Link>
           </>
         ) : (
           <Link href="/menu">
-            <p className="highlight">← Back to menu</p>
+            <button tabIndex={0} className="highlight">
+              ← Back to menu
+            </button>
           </Link>
         )}
       </MenuHeader>
@@ -30,8 +31,8 @@ export default function Pizzas({ pizzas, show }: IPizzas) {
           <Link key={_id} href="/menu/pizza/[slug]" as={`/menu/pizza/${slug}`}>
             <li>
               <LazyImage {...url} />
-              <Click>
-                <Add />
+              <Click tabIndex={0} title="Click here to add " >
+                <Add  />
               </Click>
               <p>$ {price}</p>
               <h3>{name}</h3>

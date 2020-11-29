@@ -12,8 +12,8 @@ export default function Menus({
   sweets,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout title="Menu Shop">
-      <Pizzas pizzas={pizzas} show />
+    <Layout title="Menu">
+      <Pizzas  pizzas={pizzas} show />
       <Sweets sweets={sweets} show />
     </Layout>
   )

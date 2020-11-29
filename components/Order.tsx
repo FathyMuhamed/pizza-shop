@@ -22,7 +22,7 @@ export default function OrderAll({
           <li key={`${singleOrder.id} - ${index}`}>
             <LazyImage {...url} />
             <p>$ {singleOrder.priceSize}</p>
-            <h3>{name}</h3>
+            {name && <h3>{name}</h3>}
             <button
               className="buttonOrder removeOrder"
               type="button"

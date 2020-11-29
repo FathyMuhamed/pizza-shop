@@ -8,7 +8,7 @@ export default function SweetPage({
   sweets,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout title="Sweet Shop">
+    <Layout title="Sweet">
       <Sweets sweets={sweets} />
     </Layout>
   )

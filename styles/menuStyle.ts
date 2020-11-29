@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MenuLists = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: 3em ;
   justify-content: center;
   align-items: center;

@@ -43,7 +43,7 @@ export default function LazyImage({ src, alt, lqip }: any) {
       {lqip && <img src={lqip} alt="" aria-hidden="true" />}
       <img
         loading="lazy"
-        src={`${imageUrlFor(src)}`}
+        src={`${imageUrlFor(src).width(500).height(500).auto("format")}`}
         alt={alt}
         ref={imgRef}
         onLoad={() => setLoaded(true)}

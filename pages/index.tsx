@@ -16,6 +16,7 @@ export default function home() {
       <Home>
         <div>
           <motion.h2
+            tabIndex={0}
             transition={config}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -23,15 +24,15 @@ export default function home() {
           >
             Order your Favourite pizza
           </motion.h2>
-          <p>
+          <p tabIndex={0} title="Order your Favourite pizza">
             we promise you'll enjoy every sweet moment to find you favourite.eat
             what you love and save you time.
           </p>
           <Link href="/menu">
-            <button>Order Now →</button>
+            <button tabIndex={0}>Order Now →</button>
           </Link>
         </div>
-        <img src="/pizza.gif" alt="home image" />
+        <img role="img" src="/pizza.gif" alt="home image" />
       </Home>
     </Layout>
   )

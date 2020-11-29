@@ -20,7 +20,7 @@ export default function Layout({ children, title = "" }: layoutProps) {
         <meta name="description" content="Pizza Hot🍕🍕🍕🍕 " />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
-        <title> {title} </title>
+        <title>pizza Hot | {title} </title>
       </Head>
       <Nav />
       <Container>{children}</Container>

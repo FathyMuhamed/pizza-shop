@@ -8,7 +8,7 @@ export default function PizzaPage({
   pizzas,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout title="Pizza Shop">
+    <Layout title="Pizza">
       <Pizzas pizzas={pizzas} />
     </Layout>
   )

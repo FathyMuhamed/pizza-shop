@@ -46,9 +46,9 @@ export default function Order({ pizzas, sweets }: any) {
             />
           </label>
         </fieldset> */}
-          <fieldset style={{ textAlign: "center" }}>
+          <h2 style={{ textAlign: "center" }}>
             Total is : $ {calculateOrderTotal(order)}
-          </fieldset>
+          </h2>
           <fieldset>
             <legend>Cart Contents ({[...order].length}) </legend>
             <OrderAll

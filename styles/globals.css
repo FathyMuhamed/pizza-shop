@@ -24,6 +24,7 @@ body {
 
 :root {
   --primary: #f7b248;
+  --primary: #8f672a;
   --primary-2: #f1f3f5;
   --secondary: #f96d70;
   --secondary-2: #111;
@@ -118,6 +119,7 @@ button {
   padding: 0.2em 0.3em;
   border-radius: 6px;
   box-shadow: var(--shadow-small);
+  font-size: 1em;
 }
 
 @keyframes bounce {
