@@ -9,8 +9,7 @@ export const Pizza = styled.div`
   margin: 3em 0;
   li {
     h2 {
-      font-size: 2em;
-      font-size: 2.8vmax;
+       font-size: clamp(1.4em,2.1vmax,2.2em);
       display: flex;
       place-items: center;
       text-align: center;
@@ -28,14 +27,13 @@ export const Pizza = styled.div`
     h3 {
       color: var(--text-secondary);
       margin: 0.5em;
-      font-size: 2vmax;
+      font-size: 2.1vmax;
     }
     .size {
       margin-top: 1.2em;
       display: flex;
       place-content: center;
       flex-wrap: wrap;
-      gap: 1em;
 
       button {
         flex: 0 1 20vmin;
